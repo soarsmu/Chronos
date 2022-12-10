@@ -3,9 +3,9 @@
 This repository contains source code of research paper "Chronos: Zero-Shot Identification of Libraries from Vulnerability Reports", which is submitted to ICSE 2023
 
 ```
-@inproceedings{lyo2023chronos,
+@inproceedings{lyu2023chronos,
   title={Chronos: Zero-Shot Identification of Libraries from Vulnerability Reports},
-  author={Lyo, Yunbo and Le-Cong, Thanh and Kang, Hong Jin and Widyasari, Ratnadira and Zhao, Zhipeng and Le, Xuan-Bach D and Li, Ming and Lo, David},
+  author={Lyu, Yunbo and Le-Cong, Thanh and Kang, Hong Jin and Widyasari, Ratnadira and Zhao, Zhipeng and Le, Xuan-Bach D and Li, Ming and Lo, David},
   booktitle={Proceedings of the 45th IEEE/ACM Internation Conference on Software Engineering},
   year={2023}
 }

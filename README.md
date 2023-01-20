@@ -35,6 +35,11 @@ docker run --name chronos -it --shm-size 16G --gpus all chronosicse22/chronos:v1
 ```
 
 ## Experiments
+### Path Setting
+You need to update the workspace path in auto_run.sh https://github.com/soarsmu/Chronos/blob/07e0a7571a42470a85391b4b921e4ea6f08b0b27/auto_run.sh#L12
+
+
+
 ### Usage 
 ```
 bash auto_run.sh -d [description data: "merged" or "description_and_reference"]

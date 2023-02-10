@@ -84,6 +84,8 @@ bash auto_run.sh -d 'description_and_reference' -l 'splitting' -m 0 -i 0
 bash auto_run.sh -d 'merged' -l 'none' -m 8 -i 10
 ```
 
+# LightXML
 
+Grid search was performed on two hyperparameters: batch size (bs), epochs, and learning rate (lr). Particularly, we use batch sizes in {1, 2, 4, 8, 16}; learning rates in {1e-6, 1e-5, 1e-4, 1e-3, and 1e-2}; and epochs in {20, 25, 30, 35, 40}. We used the hyperparameters that result in LightXML’s best performance on the validation dataset to evaluate its performance on the testing dataset.
 
 

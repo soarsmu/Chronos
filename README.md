@@ -11,7 +11,9 @@ This repository contains source code of research paper "CHRONOS: Time-Aware Zero
 }
 ```
 ## Dataset
-Before using Chronos, please our [data](https://figshare.com/articles/software/Chronos-ICSE23/20787805) from Figshare 
+Before using Chronos, please our [data](https://figshare.com/articles/software/Chronos-ICSE23/20787805) from Figshare.
+
+We have update the dataset in Chronos, you should unzip all files in the Dataset folder so that you can use Chronos.
 
 ## Structure
 
@@ -33,6 +35,11 @@ docker pull chronosicse22/chronos:v1
 ```
 docker run --name chronos -it --shm-size 16G --gpus all chronosicse22/chronos:v1
 ```
+An option command to run a docker container:
+```
+docker run -it -v </media/Rb/:/workspace/> --name chronos_ae chronosicse22/chronos:v1
+```
+</media/Rb/:/workspace/> is your workspace path, you need change it for your useage.
 
 ## Experiments
 ### Path Setting

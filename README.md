@@ -45,6 +45,7 @@ docker run -it -v </media/Rb/:/workspace/> --name chronos_ae chronosicse22/chron
 ### Path Setting
 You need to update the workspace path in auto_run.sh https://github.com/soarsmu/Chronos/blob/07e0a7571a42470a85391b4b921e4ea6f08b0b27/auto_run.sh#L12
 
+The change in the auto_run.sh script is to point to the local directory of the dataset.
 
 
 ### Usage 

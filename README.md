@@ -13,7 +13,7 @@ This repository contains source code of research paper "CHRONOS: Time-Aware Zero
 ## Dataset
 Before using Chronos, please our [data](https://figshare.com/articles/software/Chronos-ICSE23/20787805) from Figshare.
 
-We have update the dataset in Chronos, you should unzip all files in the Dataset folder so that you can use Chronos.
+We have update the dataset in Chronos, you should unzip all files in the dataset folder so that you can use Chronos.
 
 ## Structure
 

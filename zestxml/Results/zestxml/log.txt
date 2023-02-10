@@ -17175,3 +17175,287 @@ sparse prod called with lmat : (13406, 2817) rmat : (13406, 2740)
 2740/2740 (100%) iterations done in 8.2 seconds at 334.11 it/sec
 
 finished in 1693.83 ms
+running : train using 8 thread(s)
+loaded input.
+bs_count         : 120
+bs_threshold     : 0
+bs_alpha         : 0.02
+bs_direct_wt     : 0.8
+binary_relevance : 1
+creating Xf Yf map...
+jaccard prod called with k : 120 th : -0.1 num thread : 8 lmat : (83661, 2817) rmat : (2817, 13406)
+13406/13406 (100%) iterations done in 50.0 seconds at 268.20 it/sec
+jaccard prod called with k : 120 th : -0.10 num thread : 8 lmat : (13406, 3111) rmat : (3111, 83661)
+83661/83661 (100%) iterations done in 59.8 seconds at 1398.38 it/sec
+1/1 (100%) iterations done in 162.6 seconds at 0.01 it/sec
+shape : (13406, 83661)
+shape : (83661, 13406)
+[STAT] nnz of sparsity pattern mat : 1282374
+[STAT] avg nnz of sparsity pattern mat per row : 95.66
+[STAT] avg nnz of sparsity pattern mat per col : 15.33
+[STAT] nnz of Xf_Yf mat : 963562
+[STAT] nnz of Yf_Xf mat : 318812
+
+finished in 244.42 s
+loading input...
+loading sparsity pattern mat from model dir
+using seen labels file : Results/zestxml/model/seen_labels.txt
+training...
+
+getting 150 shortlist per point...
+F       : 10
+min_lim : 0.00
+3111/3111 (100%) iterations done in 399.6 seconds at 7.79 it/sec
+[STAT] nnz of shortlist    : 466650
+[STAT] recall of shortlist : 98.21%
+
+training bilinear classifier
+learning shared classifier...
+[STAT] : nnz in assign_mat : 466650
+classifier_cost : 5.00
+classifier_kind : L2R_L2LOSS_SVC_DUAL
+Begin bilinear_to_linear_form
+3111/3111 (100%) iterations done in 521.0 seconds at 5.97 it/sec
+2817/2817 (100%) iterations done in 322.3 seconds at 8.74 it/sec
+1/1 (100%) iterations done in 1213.8 seconds at 0.00 it/sec
+End bilinear_to_linear_form
+applying classifier...
+466650/466650 (100%) iterations done in 108.6 seconds at 4297.40 it/sec
+acc : 98.47% pos acc : 77.04% neg acc : 98.91%
+1/1 (100%) iterations done in 5589.8 seconds at 0.00 it/sec
+
+finished in 6033.92 s
+running : predict using 8 thread(s)
+loading input...
+loading sparsity pattern mat from model dir
+loading model...
+
+getting 150 shortlist per point...
+F       : 10
+min_lim : 1e-06
+2740/2740 (100%) iterations done in 287.6 seconds at 9.53 it/sec
+[STAT] nnz of shortlist    : 411000
+[STAT] recall of shortlist : 76.13%
+prod called with k : -1 th : -0.10 num thread : 8 lmat : (13406, 83661) rmat : (83661, 2740), agg type : sum
+2740/2740 (100%) iterations done in 278.3 seconds at 9.84 it/sec
+sparse prod called with lmat : (13406, 2817) rmat : (13406, 2740)
+2740/2740 (100%) iterations done in 59.8 seconds at 45.84 it/sec
+prod called with k : -1 th : -0.10 num thread : 8 lmat : (13406, 83661) rmat : (83661, 2740), agg type : sum
+2740/2740 (100%) iterations done in 79.1 seconds at 34.63 it/sec
+sparse prod called with lmat : (13406, 2817) rmat : (13406, 2740)
+2740/2740 (100%) iterations done in 8.4 seconds at 325.22 it/sec
+
+finished in 975.18 ms
+running : train using 8 thread(s)
+loaded input.
+bs_count         : 120
+bs_threshold     : 0
+bs_alpha         : 0.02
+bs_direct_wt     : 0.8
+binary_relevance : 1
+creating Xf Yf map...
+jaccard prod called with k : 120 th : -0.1 num thread : 8 lmat : (108564, 2817) rmat : (2817, 4678)
+4678/4678 (100%) iterations done in 22.6 seconds at 207.15 it/sec
+jaccard prod called with k : 120 th : -0.10 num thread : 8 lmat : (4678, 3111) rmat : (3111, 108564)
+108564/108564 (100%) iterations done in 41.1 seconds at 2643.52 it/sec
+1/1 (100%) iterations done in 128.1 seconds at 0.01 it/sec
+shape : (4678, 108564)
+shape : (108564, 4678)
+[STAT] nnz of sparsity pattern mat : 927168
+[STAT] avg nnz of sparsity pattern mat per row : 198.20
+[STAT] avg nnz of sparsity pattern mat per col : 8.54
+[STAT] nnz of Xf_Yf mat : 870656
+[STAT] nnz of Yf_Xf mat : 56512
+
+finished in 203.17 s
+loading input...
+loading sparsity pattern mat from model dir
+using seen labels file : Results/zestxml/model/seen_labels.txt
+training...
+
+getting 150 shortlist per point...
+F       : 10
+min_lim : 0.00
+3111/3111 (100%) iterations done in 193.9 seconds at 16.04 it/sec
+[STAT] nnz of shortlist    : 466650
+[STAT] recall of shortlist : 97.31%
+
+training bilinear classifier
+learning shared classifier...
+[STAT] : nnz in assign_mat : 466650
+classifier_cost : 5.00
+classifier_kind : L2R_L2LOSS_SVC_DUAL
+Begin bilinear_to_linear_form
+3111/3111 (100%) iterations done in 680.6 seconds at 4.57 it/sec
+2817/2817 (100%) iterations done in 101.4 seconds at 27.79 it/sec
+1/1 (100%) iterations done in 1191.3 seconds at 0.00 it/sec
+End bilinear_to_linear_form
+applying classifier...
+466650/466650 (100%) iterations done in 121.9 seconds at 3827.89 it/sec
+acc : 99.13% pos acc : 76.22% neg acc : 99.59%
+1/1 (100%) iterations done in 5867.4 seconds at 0.00 it/sec
+
+finished in 6088.41 s
+running : predict using 8 thread(s)
+loading input...
+loading sparsity pattern mat from model dir
+loading model...
+
+getting 150 shortlist per point...
+F       : 10
+min_lim : 1e-06
+2740/2740 (100%) iterations done in 142.0 seconds at 19.30 it/sec
+[STAT] nnz of shortlist    : 411000
+[STAT] recall of shortlist : 80.91%
+prod called with k : -1 th : -0.10 num thread : 8 lmat : (4678, 108564) rmat : (108564, 2740), agg type : sum
+2740/2740 (100%) iterations done in 148.1 seconds at 18.51 it/sec
+sparse prod called with lmat : (4678, 2817) rmat : (4678, 2740)
+2740/2740 (100%) iterations done in 27.5 seconds at 99.52 it/sec
+prod called with k : -1 th : -0.10 num thread : 8 lmat : (4678, 108564) rmat : (108564, 2740), agg type : sum
+2740/2740 (100%) iterations done in 75.8 seconds at 36.16 it/sec
+sparse prod called with lmat : (4678, 2817) rmat : (4678, 2740)
+2740/2740 (100%) iterations done in 7.0 seconds at 391.09 it/sec
+
+finished in 657.40 ms
+running : train using 8 thread(s)
+loaded input.
+bs_count         : 120
+bs_threshold     : 0
+bs_alpha         : 0.02
+bs_direct_wt     : 0.8
+binary_relevance : 1
+creating Xf Yf map...
+jaccard prod called with k : 120 th : -0.1 num thread : 8 lmat : (108564, 2817) rmat : (2817, 4678)
+4678/4678 (100%) iterations done in 23.1 seconds at 202.84 it/sec
+jaccard prod called with k : 120 th : -0.10 num thread : 8 lmat : (4678, 3111) rmat : (3111, 108564)
+108564/108564 (100%) iterations done in 47.8 seconds at 2272.35 it/sec
+1/1 (100%) iterations done in 130.5 seconds at 0.01 it/sec
+shape : (4678, 108564)
+shape : (108564, 4678)
+[STAT] nnz of sparsity pattern mat : 927168
+[STAT] avg nnz of sparsity pattern mat per row : 198.20
+[STAT] avg nnz of sparsity pattern mat per col : 8.54
+[STAT] nnz of Xf_Yf mat : 870656
+[STAT] nnz of Yf_Xf mat : 56512
+
+finished in 211.67 s
+loading input...
+loading sparsity pattern mat from model dir
+using seen labels file : Results/zestxml/model/seen_labels.txt
+training...
+
+getting 150 shortlist per point...
+F       : 10
+min_lim : 0.00
+3111/3111 (100%) iterations done in 193.0 seconds at 16.12 it/sec
+[STAT] nnz of shortlist    : 466650
+[STAT] recall of shortlist : 97.31%
+
+training bilinear classifier
+learning shared classifier...
+[STAT] : nnz in assign_mat : 466650
+classifier_cost : 5.00
+classifier_kind : L2R_L2LOSS_SVC_DUAL
+Begin bilinear_to_linear_form
+3111/3111 (100%) iterations done in 679.9 seconds at 4.58 it/sec
+2817/2817 (100%) iterations done in 101.7 seconds at 27.69 it/sec
+1/1 (100%) iterations done in 1195.8 seconds at 0.00 it/sec
+End bilinear_to_linear_form
+applying classifier...
+466650/466650 (100%) iterations done in 123.5 seconds at 3780.13 it/sec
+acc : 99.13% pos acc : 76.22% neg acc : 99.59%
+1/1 (100%) iterations done in 6204.1 seconds at 0.00 it/sec
+
+finished in 6423.05 s
+running : predict using 8 thread(s)
+loading input...
+loading sparsity pattern mat from model dir
+loading model...
+
+getting 150 shortlist per point...
+F       : 10
+min_lim : 1e-06
+2740/2740 (100%) iterations done in 142.1 seconds at 19.29 it/sec
+[STAT] nnz of shortlist    : 411000
+[STAT] recall of shortlist : 80.91%
+prod called with k : -1 th : -0.10 num thread : 8 lmat : (4678, 108564) rmat : (108564, 2740), agg type : sum
+2740/2740 (100%) iterations done in 189.8 seconds at 14.43 it/sec
+sparse prod called with lmat : (4678, 2817) rmat : (4678, 2740)
+2740/2740 (100%) iterations done in 30.6 seconds at 89.65 it/sec
+prod called with k : -1 th : -0.10 num thread : 8 lmat : (4678, 108564) rmat : (108564, 2740), agg type : sum
+2740/2740 (100%) iterations done in 96.8 seconds at 28.29 it/sec
+sparse prod called with lmat : (4678, 2817) rmat : (4678, 2740)
+2740/2740 (100%) iterations done in 6.8 seconds at 405.99 it/sec
+
+finished in 717.75 ms
+running : train using 8 thread(s)
+loaded input.
+bs_count         : 120
+bs_threshold     : 0
+bs_alpha         : 0.02
+bs_direct_wt     : 0.8
+binary_relevance : 1
+creating Xf Yf map...
+jaccard prod called with k : 120 th : -0.1 num thread : 8 lmat : (83661, 2817) rmat : (2817, 13406)
+13406/13406 (100%) iterations done in 65.8 seconds at 203.68 it/sec
+jaccard prod called with k : 120 th : -0.10 num thread : 8 lmat : (13406, 3111) rmat : (3111, 83661)
+83661/83661 (100%) iterations done in 76.0 seconds at 1100.73 it/sec
+1/1 (100%) iterations done in 227.8 seconds at 0.00 it/sec
+shape : (13406, 83661)
+shape : (83661, 13406)
+[STAT] nnz of sparsity pattern mat : 1282374
+[STAT] avg nnz of sparsity pattern mat per row : 95.66
+[STAT] avg nnz of sparsity pattern mat per col : 15.33
+[STAT] nnz of Xf_Yf mat : 963562
+[STAT] nnz of Yf_Xf mat : 318812
+
+finished in 332.54 s
+loading input...
+loading sparsity pattern mat from model dir
+using seen labels file : Results/zestxml/model/seen_labels.txt
+training...
+
+getting 150 shortlist per point...
+F       : 10
+min_lim : 0.00
+3111/3111 (100%) iterations done in 518.7 seconds at 6.00 it/sec
+[STAT] nnz of shortlist    : 466650
+[STAT] recall of shortlist : 98.21%
+
+training bilinear classifier
+learning shared classifier...
+[STAT] : nnz in assign_mat : 466650
+classifier_cost : 5.00
+classifier_kind : L2R_L2LOSS_SVC_DUAL
+Begin bilinear_to_linear_form
+3111/3111 (100%) iterations done in 636.9 seconds at 4.88 it/sec
+2817/2817 (100%) iterations done in 336.6 seconds at 8.37 it/sec
+1/1 (100%) iterations done in 1393.2 seconds at 0.00 it/sec
+End bilinear_to_linear_form
+applying classifier...
+466650/466650 (100%) iterations done in 113.0 seconds at 4129.57 it/sec
+acc : 98.47% pos acc : 77.04% neg acc : 98.91%
+1/1 (100%) iterations done in 5872.4 seconds at 0.00 it/sec
+
+finished in 6450.09 s
+running : predict using 8 thread(s)
+loading input...
+loading sparsity pattern mat from model dir
+loading model...
+
+getting 150 shortlist per point...
+F       : 10
+min_lim : 1e-06
+2740/2740 (100%) iterations done in 282.2 seconds at 9.71 it/sec
+[STAT] nnz of shortlist    : 411000
+[STAT] recall of shortlist : 76.13%
+prod called with k : -1 th : -0.10 num thread : 8 lmat : (13406, 83661) rmat : (83661, 2740), agg type : sum
+2740/2740 (100%) iterations done in 268.6 seconds at 10.20 it/sec
+sparse prod called with lmat : (13406, 2817) rmat : (13406, 2740)
+2740/2740 (100%) iterations done in 55.9 seconds at 49.04 it/sec
+prod called with k : -1 th : -0.10 num thread : 8 lmat : (13406, 83661) rmat : (83661, 2740), agg type : sum
+2740/2740 (100%) iterations done in 104.2 seconds at 26.29 it/sec
+sparse prod called with lmat : (13406, 2817) rmat : (13406, 2740)
+2740/2740 (100%) iterations done in 9.7 seconds at 282.88 it/sec
+
+finished in 989.57 ms

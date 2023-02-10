@@ -13,7 +13,7 @@ from spiral import ronin
 
 # REF_NAME = sys.argv[1]
 
-BASE_PATH = "dataset/description_data/"
+BASE_PATH = "dataset/description_data"
 DESCRIPTION_DATA_PATH = f"{BASE_PATH}/dataset_merged_cleaned.csv"
 REFERENCE_DATA_PATH = f"dataset/reference_data/reference_data_raw_0.5_15.csv"
 

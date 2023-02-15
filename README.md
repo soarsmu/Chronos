@@ -85,6 +85,11 @@ bash auto_run.sh -d 'description_and_reference' -l 'splitting' -m 0 -i 0
 bash auto_run.sh -d 'merged' -l 'none' -m 8 -i 10
 ```
 
+### Expected Output
+For RQ1, after executing the script, you will find the information about seen and unseen labels by years. For RQ2 and RQ3, after executing each script, you will find Precision, Recall, and F1 for each experiment set.
+
+You can get the detailed expected output in the [document](https://github.com/soarsmu/Chronos/blob/main/USAGE%20EXAMPLES.pdf).
+
 # LightXML
 
 Grid search was performed on two hyperparameters: batch size (bs), epochs, and learning rate (lr). 

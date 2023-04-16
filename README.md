@@ -1,6 +1,6 @@
 # Chronos
 
-This repository contains the source code of our research paper "CHRONOS: Time-Aware Zero-Shot Identification of Libraries from Vulnerability Reports", which is accepted at ICSE 2023
+This repository contains the source code of our research [paper](https://arxiv.org/pdf/2301.03944.pdf) "CHRONOS: Time-Aware Zero-Shot Identification of Libraries from Vulnerability Reports", which is accepted at ICSE 2023
 
 ```
 @inproceedings{lyu2023chronos,

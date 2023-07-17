@@ -25,7 +25,7 @@ The structure of our source code's repository is as follows:
  
 ## Environment Configuration
 For ease of use, we also provide a 
-installation package via a [docker image](https://hub.docker.com/repository/docker/chronosicse22/chronos). You can set up AutoPruner's docker step-by-step as follow:
+installation package via a [docker image](https://hub.docker.com/repository/docker/chronosicse22/chronos). You can set up Chronos's docker step-by-step as follow:
 
 - Pull Chronos's docker image: 
 ```

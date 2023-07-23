@@ -10,6 +10,11 @@ This repository contains the source code of our research [paper](https://arxiv.o
   year={2023}
 }
 ```
+
+## Note
+There is a minor inconsistency between the paper and the code that has been addressed in the latest [arxiv paper](https://arxiv.org/abs/2301.03944). Specifically, the code use normalized P@K to consider the best possible P@K. The paper mentions standard P@K. The arxiv paper has now been updated. The arxiv paper also now includes results of the standard P@K (in the Appendix) and we have similar findings: Chronos outperforms ZestXML by 20%+, and both outperform LightXML by a big margin.
+
+
 ## Dataset
 Before using Chronos, please download our [data](https://figshare.com/articles/software/Chronos-ICSE23/22082075) from Figshare.
 

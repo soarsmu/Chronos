@@ -119,7 +119,9 @@ for i, rows in enumerate(x):
             prediction_not_seen_correct[predictions[ns[len(ns)-2]]] = prediction_not_seen_correct.get(predictions[ns[len(ns)-2]], 0) + 1
     if predictions[ns[len(ns)-2]] not in seen_labels:
         prediction_not_seen[predictions[ns[len(ns)-2]]] = prediction_not_seen.get(predictions[ns[len(ns)-2]], 0) + 1
-    sum_precision_2 += correct_prediction / 2
+    # Normalized P@K
+    sum_precision_2 += (correct_prediction / min(2, len(labels)))
+    # Standard P@K
     # sum_precision_2 += (correct_prediction / 2)
     sum_recall_2 += (correct_prediction / len(labels))
 
@@ -130,7 +132,9 @@ for i, rows in enumerate(x):
             prediction_not_seen_correct[predictions[ns[len(ns)-3]]] = prediction_not_seen_correct.get(predictions[ns[len(ns)-3]], 0) + 1
     if predictions[ns[len(ns)-3]] not in seen_labels:
         prediction_not_seen[predictions[ns[len(ns)-3]]] = prediction_not_seen.get(predictions[ns[len(ns)-3]], 0) + 1
-    sum_precision_3 += correct_prediction / 3
+    # Normalized P@K
+    sum_precision_3 += (correct_prediction / min(3, len(labels)))
+    # Standard P@K
     # sum_precision_3 += (correct_prediction / 3)
     sum_recall_3 += (correct_prediction / len(labels))
 

@@ -248,8 +248,10 @@ def evaluation_loop(args):
             if updated_predictions[K] not in seen_labels:
                 prediction_not_seen[updated_predictions[K]] = prediction_not_seen.get(updated_predictions[K], 0) + 1
             if K+1 in sum_index:
-                sum_precision[K+1] += correct_prediction / (K+1)
-                # sum_precision_1 += (correct_prediction / 1)
+                # Normalized P@K
+                sum_precision[K+1] += (correct_prediction / min(K+1, len(labels)))
+                # Standard P@K
+                # sum_precision[K+1] += correct_prediction / (K+1)
                 sum_recall[K+1] += (correct_prediction / len(labels))
 
             
